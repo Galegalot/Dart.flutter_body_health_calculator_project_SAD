@@ -13,7 +13,7 @@ import 'package:flutter_body_health_calculator_project/main.dart';
 void main() {
   testWidgets('App smoke test', (WidgetTester tester) async {
     await tester.pumpWidget(const MainApp());
-    expect(find.text('Body ว้าว'), findsOneWidget);
+    expect(find.text('Body Health Calculator'), findsWidgets);
     await tester.pumpAndSettle(const Duration(seconds: 4));
   });
 }

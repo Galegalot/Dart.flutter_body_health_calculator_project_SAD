@@ -37,18 +37,20 @@ class AboutUI extends StatelessWidget {
               onTap: onNavigateToBmi,
               borderRadius: BorderRadius.circular(10),
               child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
                     Icon(Icons.person, color: Color(0xFFD32F2F), size: 24),
                     SizedBox(width: 8),
-                    Text(
-                      'คำนวณหาค่าดัชนีมวลกาย (BMI)',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFFD32F2F),
+                    Flexible(
+                      child: Text(
+                        'คำนวณหาค่าดัชนีมวลกาย (BMI)',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFFD32F2F),
+                        ),
                       ),
                     ),
                   ],
@@ -60,18 +62,20 @@ class AboutUI extends StatelessWidget {
               onTap: onNavigateToBmr,
               borderRadius: BorderRadius.circular(10),
               child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 16),
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: const [
                     Icon(Icons.accessibility_new, color: Color(0xFFD32F2F), size: 24),
                     SizedBox(width: 8),
-                    Text(
-                      'คำนวณหาแคลอรี่ที่ร่างกายต้องการ (BMR)',
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFFD32F2F),
+                    Flexible(
+                      child: Text(
+                        'คำนวณหาแคลอรี่ที่ร่างกายต้องการ (BMR)',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                          color: Color(0xFFD32F2F),
+                        ),
                       ),
                     ),
                   ],
