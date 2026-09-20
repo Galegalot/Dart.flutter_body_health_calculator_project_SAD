@@ -11,12 +11,12 @@ class HomeUI extends StatefulWidget {
 }
 
 class _HomeUIState extends State<HomeUI> {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
 
   final List<Widget> _pages = const [
     BmiUI(),
-    BmrUI(),
     AboutUI(),
+    BmrUI(),
   ];
 
   @override
@@ -30,21 +30,21 @@ class _HomeUIState extends State<HomeUI> {
             _currentIndex = index;
           });
         },
-        selectedItemColor: const Color(0xFF2C5E8A),
+        selectedItemColor: const Color(0xFFD32F2F),
         unselectedItemColor: Colors.grey,
         type: BottomNavigationBarType.fixed,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.monitor_weight),
+            icon: Icon(Icons.person),
             label: 'BMI',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.local_fire_department),
-            label: 'BMR',
+            icon: Icon(Icons.home),
+            label: 'About',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.info),
-            label: 'เกี่ยวกับ',
+            icon: Icon(Icons.accessibility_new),
+            label: 'BMR',
           ),
         ],
       ),

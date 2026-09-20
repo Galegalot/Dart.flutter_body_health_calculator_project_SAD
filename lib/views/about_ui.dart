@@ -6,83 +6,77 @@ class AboutUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFFDF8F8),
       appBar: AppBar(
         title: const Text(
-          'เกี่ยวกับ',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          'Body Health Calculator',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
         ),
         centerTitle: true,
-        backgroundColor: const Color(0xFF2C5E8A),
-        foregroundColor: Colors.white,
+        backgroundColor: const Color(0xFFD32F2F),
+        elevation: 0,
       ),
       body: Center(
         child: SingleChildScrollView(
-          padding: const EdgeInsets.all(24.0),
+          padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 40.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              const Text(
+                'Body Health Calculator',
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFD32F2F),
+                ),
+              ),
+              const SizedBox(height: 30),
               Image.asset(
-                'resource/saulogo.png',
+                'resource/calculate.png',
                 width: 140,
                 height: 140,
               ),
-              const SizedBox(height: 25),
+              const SizedBox(height: 30),
               const Text(
-                'Body ว้าว',
+                '????????????????????? (BMI)',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
-                  color: Color(0xFF2C5E8A),
+                  color: Color(0xFFD32F2F),
                 ),
               ),
               const SizedBox(height: 8),
               const Text(
-                'เวอร์ชัน 1.0.0',
+                '??????????????????????????????? (BMR)',
                 style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.grey,
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFD32F2F),
                 ),
               ),
-              const SizedBox(height: 20),
-              Card(
-                elevation: 3,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(16),
+              const SizedBox(height: 60),
+              Image.asset(
+                'resource/saulogo.png',
+                width: 70,
+                height: 70,
+              ),
+              const SizedBox(height: 15),
+              const Text(
+                '� 2026 SAU. All rights reserved.',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.black54,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(20.0),
-                  child: Column(
-                    children: const [
-                      Text(
-                        'แอปพลิเคชันคำนวณค่าดัชนีมวลกาย (BMI) และอัตราการเผาผลาญพลังงาน (BMR)',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: 16,
-                          height: 1.5,
-                        ),
-                      ),
-                      SizedBox(height: 16),
-                      Divider(),
-                      SizedBox(height: 16),
-                      Text(
-                        'พัฒนาโดย นักศึกษาวิศวกรรมคอมพิวเตอร์',
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
-                          color: Color(0xFF2C5E8A),
-                        ),
-                      ),
-                      SizedBox(height: 6),
-                      Text(
-                        'มหาวิทยาลัยเอเชียอาคเนย์ (SAU)',
-                        style: TextStyle(
-                          fontSize: 15,
-                          color: Colors.black87,
-                        ),
-                      ),
-                    ],
-                  ),
+              ),
+              const SizedBox(height: 4),
+              const Text(
+                'Created by SAU Software Development Team',
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.black54,
                 ),
               ),
             ],

@@ -25,40 +25,30 @@ class _SplashScreenUIState extends State<SplashScreenUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF2C5E8A),
+      backgroundColor: const Color(0xFFD32F2F),
       body: Center(
-        child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Image.asset(
-                'resource/icon.png',
-                width: 150,
-                height: 150,
-              ),
-              const SizedBox(height: 25),
-              const Text(
-                'Body ว้าว',
-                style: TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 10),
-              const Text(
-                'BMI & BMR Calculator',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white70,
-                ),
-              ),
-              const SizedBox(height: 40),
-              const CircularProgressIndicator(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(
+              'resource/icon.png',
+              width: 170,
+              height: 170,
+            ),
+            const SizedBox(height: 35),
+            const Text(
+              'Body Health Calculator',
+              style: TextStyle(
+                fontSize: 26,
+                fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
-            ],
-          ),
+            ),
+            const SizedBox(height: 40),
+            const CircularProgressIndicator(
+              color: Colors.white,
+            ),
+          ],
         ),
       ),
     );
