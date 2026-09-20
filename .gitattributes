@@ -1,2 +1,9 @@
-*.html linguist-detectable=false
+# Mark platform runners and boilerplate as vendored so GitHub shows 100% Dart
+windows/* linguist-vendored
+linux/* linguist-vendored
+macos/* linguist-vendored
+ios/* linguist-vendored
+android/* linguist-vendored
 web/* linguist-vendored
+*.html linguist-detectable=false
+
