@@ -1,28 +1,28 @@
 # flutter_body_health_calculator_project
 
-โปรเจกต์ **flutter_body_health_calculator_project (Body ว้าว)** เป็นส่วนหนึ่งของรายวิชา **Mobile Development** จัดทำขึ้นเพื่อฝึกการพัฒนา Mobile Application ด้วย **Flutter และ Dart**
+**flutter_body_health_calculator_project (Body Wow)** is a mobile development student project developed using **Flutter & Dart**.
 
-แอปพลิเคชันสำหรับคำนวณค่าดัชนีมวลกาย (BMI) และอัตราการเผาผลาญพลังงานพื้นฐาน (BMR) พร้อมแสดงผลและให้คำแนะนำเบื้องต้นเกี่ยวกับสุขภาพ
+This application calculates Body Mass Index (BMI) and Basal Metabolic Rate (BMR), providing health results and recommendations.
 
-## 📱 หน้าจอของแอปพลิเคชัน
+## 📱 Application Screens
 
-| หน้าจอ | ไฟล์ | รายละเอียด |
+| Screen | File | Description |
 |---|---|---|
-| Splash Screen | `splash_screen_ui.dart` | หน้าแรกของแอป แสดงชื่อแอป "Body ว้าว" และโลโก้พร้อมโหลด 3 วินาที |
-| Home | `home_ui.dart` | เมนูหลักควบคุมด้วย BottomNavigationBar สำหรับสลับหน้า |
-| BMI Calculator | `bmi_ui.dart` | คำนวณค่าดัชนีมวลกายตามน้ำหนักและส่วนสูง พร้อมระดับความเสี่ยง |
-| BMR Calculator | `bmr_ui.dart` | คำนวณค่าการเผาผลาญพลังงานขั้นต่ำตามเพศ น้ำหนัก ส่วนสูง และอายุ |
-| About | `about_ui.dart` | ข้อมูลเกี่ยวกับแอปพลิเคชัน ผู้พัฒนา และสถาบัน |
+| Splash Screen | `splash_screen_ui.dart` | Welcome screen showing app logo, "Body ว้าว", and loading indicator |
+| Home | `home_ui.dart` | Main navigation shell powered by `BottomNavigationBar` |
+| BMI Calculator | `bmi_ui.dart` | Calculates BMI from weight and height, displays health category |
+| BMR Calculator | `bmr_ui.dart` | Calculates BMR based on gender, weight, height, and age |
+| About | `about_ui.dart` | Project, developer, and university information |
 
-## 🛠️ เครื่องมือที่ใช้พัฒนา
+## 🛠️ Tech Stack & Details
 
 - **Flutter**
 - **Dart**
 - **Google Fonts (Kanit)**
-- ออกแบบ UI และทดสอบบนหน้าจอ iPhone 15 Pro Max
-- สถาบัน: มหาวิทยาลัยเอเชียอาคเนย์ (SAU)
+- Tested on: iPhone 15 Pro Max layout
+- University: Southeast Asia University (SAU)
 
-## 📂 โครงสร้างไฟล์ใน lib/
+## 📂 Project Structure (`lib/`)
 
 ```text
 lib/
